@@ -1,0 +1,45 @@
+{
+  "scalars": {
+    "totalIssueCount": 440,
+    "redundanciesInCode": 1280
+  },
+  "objects": {
+    "topIssue": {
+      "id": 1280,
+      "ruleId": "RedundantUsingDirective",
+      "level": "Warning",
+      "message": "Using directive is not required by the code and can be safely removed",
+      "description": "Redundant using directive",
+      "detailsUrl": "https://www.jetbrains.com/resharperplatform/help?Keyword=RedundantUsingDirective",
+      "category": "Redundancies in Code"
+    }
+  },
+  "collections": {
+    "issueCountByCategory": [
+      {
+        "category": "Constraints Violations",
+        "issueCount": 1
+      },
+      {
+        "category": "Language Usage Opportunities",
+        "issueCount": 2
+      },
+      {
+        "category": "Potential Code Quality Issues",
+        "issueCount": 4
+      },
+      {
+        "category": "Redundancies in Code",
+        "issueCount": 60
+      },
+      {
+        "category": "Redundancies in Symbol Declarations",
+        "issueCount": 72
+      },
+      {
+        "category": "Syntax Style",
+        "issueCount": 6
+      }
+    ]
+  }
+}
