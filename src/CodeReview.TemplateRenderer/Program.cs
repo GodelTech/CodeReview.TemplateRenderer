@@ -3,15 +3,15 @@ using System.IO;
 using System.Threading.Tasks;
 using CommandLine;
 using CommandLine.Text;
+using GodelTech.CodeReview.TemplateRenderer.Commands;
+using GodelTech.CodeReview.TemplateRenderer.Models;
+using GodelTech.CodeReview.TemplateRenderer.Options;
+using GodelTech.CodeReview.TemplateRenderer.Services;
+using GodelTech.CodeReview.TemplateRenderer.Utils;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
-using ReviewItEasy.TemplateRenderer.Commands;
-using ReviewItEasy.TemplateRenderer.Models;
-using ReviewItEasy.TemplateRenderer.Options;
-using ReviewItEasy.TemplateRenderer.Services;
-using ReviewItEasy.TemplateRenderer.Utils;
 
-namespace ReviewItEasy.TemplateRenderer
+namespace GodelTech.CodeReview.TemplateRenderer
 {
     class Program
     {

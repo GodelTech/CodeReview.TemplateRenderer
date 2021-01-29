@@ -1,7 +1,7 @@
 ﻿using System.IO;
 using System.Threading.Tasks;
 
-namespace ReviewItEasy.TemplateRenderer.Services
+namespace GodelTech.CodeReview.TemplateRenderer.Services
 {
     public interface IFileService
     {

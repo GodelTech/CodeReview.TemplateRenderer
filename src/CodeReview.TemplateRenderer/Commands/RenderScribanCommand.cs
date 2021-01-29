@@ -1,18 +1,14 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Dynamic;
-using System.IO;
-using System.Reflection;
 using System.Threading.Tasks;
+using GodelTech.CodeReview.TemplateRenderer.Models;
+using GodelTech.CodeReview.TemplateRenderer.Options;
+using GodelTech.CodeReview.TemplateRenderer.Services;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
-using ReviewItEasy.TemplateRenderer.Models;
-using ReviewItEasy.TemplateRenderer.Options;
-using ReviewItEasy.TemplateRenderer.Services;
-using Scriban.Parsing;
 using Scriban.Runtime;
 
-namespace ReviewItEasy.TemplateRenderer.Commands
+namespace GodelTech.CodeReview.TemplateRenderer.Commands
 {
     public class RenderScribanCommand : IRenderScribanCommand
     {

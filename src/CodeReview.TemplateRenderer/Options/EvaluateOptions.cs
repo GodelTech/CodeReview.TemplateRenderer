@@ -1,6 +1,6 @@
 ﻿using CommandLine;
 
-namespace ReviewItEasy.TemplateRenderer.Options
+namespace GodelTech.CodeReview.TemplateRenderer.Options
 {
     [Verb("scriban", HelpText = "Create issue summary using provided manifest.")]
     public class ScribanOptions

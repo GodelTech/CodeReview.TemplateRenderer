@@ -2,7 +2,7 @@
 using System.Text;
 using Microsoft.Extensions.Logging;
 
-namespace ReviewItEasy.TemplateRenderer.Utils
+namespace GodelTech.CodeReview.TemplateRenderer.Utils
 {
     public class SimplifiedConsoleLoggerProvider : ILoggerProvider
     {

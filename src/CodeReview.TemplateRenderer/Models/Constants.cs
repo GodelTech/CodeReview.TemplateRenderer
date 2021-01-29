@@ -1,4 +1,4 @@
-﻿namespace ReviewItEasy.TemplateRenderer.Models
+﻿namespace GodelTech.CodeReview.TemplateRenderer.Models
 {
     internal static class Constants
     {

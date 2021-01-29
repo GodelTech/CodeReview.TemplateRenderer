@@ -1,7 +1,7 @@
 ﻿using System.Threading.Tasks;
-using ReviewItEasy.TemplateRenderer.Options;
+using GodelTech.CodeReview.TemplateRenderer.Options;
 
-namespace ReviewItEasy.TemplateRenderer.Commands
+namespace GodelTech.CodeReview.TemplateRenderer.Commands
 {
     public interface IRenderScribanCommand
     {
