@@ -2,12 +2,16 @@
 
 How to build image 
 
-docker build -t diamonddragon/template-renderer -f src/ReviewItEasy.TemplateRenderer/Dockerfile ./src
+docker build -t godeltech/codereview.template-renderer -f src/CodeReview.TemplateRenderer/Dockerfile ./src
+docker image tag godeltech/codereview.template-renderer:0.0.1 godeltech/codereview.template-renderer:latest
+docker push godeltech/codereview.template-renderer:latest
+docker push godeltech/codereview.template-renderer:0.0.1
+
 
 Run:
 
-docker run -v "/d/temp:/result"   --rm diamonddragon/evaluator  run -p SonarAnalyzer.CSharp -o /result/result.yaml -j
+docker run -v "/d/temp:/result"   --rm godeltech/codereview.template-renderer  run -p SonarAnalyzer.CSharp -o /result/result.yaml -j
 
 Debug:
 
-docker run -v "/d/temp:/result" -it --rm  --entrypoint /bin/bash  diamonddragon/file-converter 
+docker run -v "/d/temp:/result" -it --rm  --entrypoint /bin/bash  godeltech/codereview.template-renderer 
