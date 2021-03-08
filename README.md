@@ -2,10 +2,10 @@
 
 How to build image 
 
-docker build -t godeltech/codereview.template-renderer -f src/CodeReview.TemplateRenderer/Dockerfile ./src
-docker image tag godeltech/codereview.template-renderer:0.0.1 godeltech/codereview.template-renderer:latest
+docker build -t godeltech/codereview.template-renderer:0.0.3 -f src/CodeReview.TemplateRenderer/Dockerfile ./src
+docker image tag godeltech/codereview.template-renderer:0.0.3 godeltech/codereview.template-renderer:latest
 docker push godeltech/codereview.template-renderer:latest
-docker push godeltech/codereview.template-renderer:0.0.1
+docker push godeltech/codereview.template-renderer:0.0.3
 
 
 Run:
