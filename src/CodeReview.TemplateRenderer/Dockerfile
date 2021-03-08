@@ -9,9 +9,6 @@ RUN dotnet publish ./CodeReview.TemplateRenderer/CodeReview.TemplateRenderer.csp
 
 FROM mcr.microsoft.com/dotnet/runtime:5.0 AS runtime
 
-RUN apt-get update
-RUN apt-get --yes install nuget
-
 WORKDIR /app
 COPY --from=build /app/CodeReview.TemplateRenderer/out .
 ENTRYPOINT ["dotnet", "CodeReview.TemplateRenderer.dll"]
