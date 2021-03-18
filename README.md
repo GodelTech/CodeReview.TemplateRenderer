@@ -1,17 +1,12 @@
 # Introduction 
 
-How to build image 
-
-docker build -t godeltech/codereview.template-renderer:0.0.3 -f src/CodeReview.TemplateRenderer/Dockerfile ./src
-docker image tag godeltech/codereview.template-renderer:0.0.3 godeltech/codereview.template-renderer:latest
-docker push godeltech/codereview.template-renderer:latest
-docker push godeltech/codereview.template-renderer:0.0.3
-
-
-Run:
-
-docker run -v "/d/temp:/result"   --rm godeltech/codereview.template-renderer  run -p SonarAnalyzer.CSharp -o /result/result.yaml -j
-
-Debug:
-
-docker run -v "/d/temp:/result" -it --rm  --entrypoint /bin/bash  godeltech/codereview.template-renderer 
+#### scriban
+Create issue summary using provided manifest
+<pre>
+> dotnet CodeReview.TemplateRenderer.dll scriban -o result.txt -t template.liquid  -d data.json
+</pre>
+| Agruments     | Key       | Required   | Type      | Description agrument      |
+| ------------- | --------- | ---------- | --------- | ------------------------- |
+| --template    | -t        | true       | string    | Path to scriban template file |
+| --data        | -d        | true       | string    | Path to data file         |
+| --output      | -o        | true       | string    | Output file path          |
