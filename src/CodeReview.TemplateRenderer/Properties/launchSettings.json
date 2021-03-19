@@ -1,6 +1,6 @@
 {
   "profiles": {
-    "ReviewItEasy.TemplateRenderer": {
+    "CodeReview.TemplateRenderer": {
       "commandName": "Project",
       "commandLineArgs": "scriban -o result.txt -t ../../../../../docs/data/template.liquid  -d ../../../../../docs/data/data.json"
     }
