@@ -1,6 +1,8 @@
 # Introduction 
 
-#### scriban
+Command line template rending tool. It accepts JSON file as data source and .liquid template as template file. 
+
+## liquid
 Create issue summary using provided manifest
 <pre>
 > dotnet CodeReview.TemplateRenderer.dll liquid -o result.txt -t template.liquid  -d data.json

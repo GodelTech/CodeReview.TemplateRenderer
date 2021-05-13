@@ -1,8 +1,8 @@
-# Commands
+## Commands
 
 {% for command in Commands %}
 
-## {{ command.Name }}
+### {{ command.Name }}
 
 Is Default: {{ command.IsDefault }}. {{ command.Description }}
 
@@ -10,7 +10,8 @@ Is Default: {{ command.IsDefault }}. {{ command.Description }}
 
 | Arguments     | Key       | Required   | Description argument      |
 | ------------- | --------- | ---------- | ------------------------- |
-{% for parameter in command.Parameters %}| --{{ parameter.LongName }} | -{{ parameter.ShortName }} | {{ parameter.IsOptional }} | {{ parameter.Description }} |{% endfor %}
+{% for parameter in command.Parameters %}| --{{ parameter.LongName }} | -{{ parameter.ShortName }} | {{ parameter.IsOptional }} | {{ parameter.Description }} |
+{% endfor %}
 
     {%endunless%}
 
