@@ -1,0 +1,17 @@
+# Commands
+
+{% for command in Commands %}
+
+## {{ command.Name }}
+
+Is Default: {{ command.IsDefault }}. {{ command.Description }}
+
+    {% unless command.Parameters == empty %}
+
+| Arguments     | Key       | Required   | Description argument      |
+| ------------- | --------- | ---------- | ------------------------- |
+{% for parameter in command.Parameters %}| --{{ parameter.LongName }} | -{{ parameter.ShortName }} | {{ parameter.IsOptional }} | {{ parameter.Description }} |{% endfor %}
+
+    {%endunless%}
+
+{% endfor %}

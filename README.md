@@ -3,7 +3,7 @@
 #### scriban
 Create issue summary using provided manifest
 <pre>
-> dotnet CodeReview.TemplateRenderer.dll scriban -o result.txt -t template.liquid  -d data.json
+> dotnet CodeReview.TemplateRenderer.dll liquid -o result.txt -t template.liquid  -d data.json
 </pre>
 | Agruments     | Key       | Required   | Type      | Description agrument      |
 | ------------- | --------- | ---------- | --------- | ------------------------- |

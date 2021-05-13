@@ -3,7 +3,7 @@ using GodelTech.CodeReview.TemplateRenderer.Options;
 
 namespace GodelTech.CodeReview.TemplateRenderer.Commands
 {
-    public interface IRenderScribanCommand
+    public interface IRenderLiquidCommand
     {
         Task<int> ExecuteAsync(ScribanOptions options);
     }
