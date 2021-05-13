@@ -36,7 +36,7 @@ namespace GodelTech.CodeReview.TemplateRenderer
 
         private static Task<int> ProcessRenderScribanAsync(ScribanOptions options, IServiceProvider container)
         {
-            return container.GetRequiredService<IRenderScribanCommand>().ExecuteAsync(options);
+            return container.GetRequiredService<IRenderLiquidCommand>().ExecuteAsync(options);
         }
 
         private static int ProcessErrors(ParserResult<ScribanOptions> result)
@@ -64,7 +64,7 @@ namespace GodelTech.CodeReview.TemplateRenderer
 
             serviceProvider.AddSingleton<IFileService, FileService>();
 
-            serviceProvider.AddTransient<IRenderScribanCommand, RenderScribanCommand>();
+            serviceProvider.AddTransient<IRenderLiquidCommand, RenderLiquidCommand>();
 
             return serviceProvider.BuildServiceProvider();
         }

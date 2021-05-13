@@ -2,7 +2,7 @@
   "profiles": {
     "CodeReview.TemplateRenderer": {
       "commandName": "Project",
-      "commandLineArgs": "scriban -o result.txt -t ../../../../../docs/data/template.liquid  -d ../../../../../docs/data/data.json"
+      "commandLineArgs": "liquid -o result.md -t ../../../../../docs/data/commands.md.liquid  -d ../../../../../docs/data/commands.json"
     }
   }
 }

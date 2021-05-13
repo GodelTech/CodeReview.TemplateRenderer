@@ -2,7 +2,7 @@
 
 namespace GodelTech.CodeReview.TemplateRenderer.Options
 {
-    [Verb("scriban", HelpText = "Create issue summary using provided manifest.")]
+    [Verb("liquid", HelpText = "Create issue summary using provided manifest.")]
     public class ScribanOptions
     {
         [Option('t', "template", Required = true, HelpText = "Path to scriban template file")]
