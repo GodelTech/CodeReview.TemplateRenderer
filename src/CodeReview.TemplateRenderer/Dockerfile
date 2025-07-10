@@ -7,7 +7,7 @@ RUN dotnet restore "CodeReview.TemplateRenderer/CodeReview.TemplateRenderer.cspr
 COPY CodeReview.TemplateRenderer/. ./CodeReview.TemplateRenderer/
 RUN dotnet publish ./CodeReview.TemplateRenderer/CodeReview.TemplateRenderer.csproj -c Release -o ./CodeReview.TemplateRenderer/out
 
-FROM mcr.microsoft.com/dotnet/runtime:5.0 AS runtime
+FROM mcr.microsoft.com/dotnet/runtime:9.0 AS runtime
 
 WORKDIR /app
 COPY --from=build /app/CodeReview.TemplateRenderer/out .
